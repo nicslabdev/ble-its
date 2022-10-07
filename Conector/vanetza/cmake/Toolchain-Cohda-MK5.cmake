@@ -1,0 +1,25 @@
+#set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY) #Tells CMake to build static library when testing compiler
+#INCLUDE(CMakeForceCompiler) 
+#set(CMAKE_SYSTEM_NAME "Generic")
+#set(CMAKE_SYSTEM_PROCESSOR "arm")
+#set(CMAKE_C_COMPILER "arm-none-eabi-gcc")
+#set(CMAKE_CXX_COMPILER "arm-none-eabi-g++")
+#CMAKE_FORCE_C_COMPILER("arm-none-eabi-gcc" GNU)
+#CMAKE_FORCE_CXX_COMPILER("arm-none-eabi-g++" GNU)
+#set(CMAKE_C_COMPILER_WORKS ON)
+#set(CMAKE_CXX_COMPILER_WORKS ON)
+#set(THREADS_PTHREAD_ARG "2" CACHE STRING "Forced by Cohda toolchain" FORCE)
+#add_compile_options(--specs=nosys.specs) PRUEBA
+#set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+#set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+#set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+
+set(CMAKE_SYSTEM_NAME "Linux")
+set(CMAKE_SYSTEM_PROCESSOR "arm")
+set(CMAKE_C_COMPILER "arm-linux-gnueabihf-gcc")
+set(CMAKE_CXX_COMPILER "arm-linux-gnueabihf-g++")
+set(THREADS_PTHREAD_ARG "2" CACHE STRING "Forced by Cohda toolchain" FORCE)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)

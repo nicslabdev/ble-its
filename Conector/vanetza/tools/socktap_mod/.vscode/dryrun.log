@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/usuario/vanetza-master-v2/tools/socktap'
+make: Leaving directory '/home/usuario/vanetza-master-v2/tools/socktap'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -1,0 +1,35 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe compilar archivo activo",
+            "command": "/usr/bin/g++",
+            "args": [
+                "sudo",
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}//${fileBasenameNoExtension}.exe",
+                "-I",
+				"/usr/include/boost/",
+                "-I",
+                "/mnt/c/Program Files/vanetza-master-v2/",
+                "<",
+                "${fileDirname}/cin.txt"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compilador: /usr/bin/g++"
+        }
+    ],
+    "version": "2.0.0"
+}
